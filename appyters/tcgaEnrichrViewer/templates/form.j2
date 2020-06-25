@@ -10,12 +10,10 @@
 
 {% block body %}
 <div class="container">
-<h1>My Test</h1>
+<center>
+<h1 style="padding:2rem 0 0 0">Patient Cohorts RNA-seq Viewer</h1>
+<p>  An appyter for the visualization and analysis of intra-cancer patient clusters based on RNA-Seq profiles and clinical data </p>
+</center>
 </div>
 {{ super() }}
-{% endblock %}
-
-{% block script %}
-{{ super() }}
-<script src="{{ url_for('static', filename='test.js') }}"></script>
 {% endblock %}
